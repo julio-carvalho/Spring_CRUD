@@ -1,4 +1,4 @@
-package br.com.crudsb.controle;
+package br.com.crudsb.service;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import br.com.crudsb.bean.Pessoa;
-import br.com.crudsb.bean.PessoaRepositorio;
+import br.com.crudsb.model.Pessoa;
+import br.com.crudsb.repository.PessoaRepository;
 
 @Controller
-public class PessoaControle {
+public class PessoaService {
 
-	private PessoaRepositorio pessoaRepo;
+	private PessoaRepository pessoaRepo;
 
-	public PessoaControle(PessoaRepositorio pessoaRepo) {
+	public PessoaService(PessoaRepository pessoaRepo) {
 		this.pessoaRepo = pessoaRepo;
 	}
 

@@ -8,18 +8,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import br.com.crudsb.bean.Pessoa;
-import br.com.crudsb.bean.PessoaRepositorio;
-
-
-
+import br.com.crudsb.model.Pessoa;
+import br.com.crudsb.repository.PessoaRepository;
 
 @Component
 @Transactional
 public class BancoInicial implements CommandLineRunner {
 
 	@Autowired
-	private PessoaRepositorio pessoaRepo;
+	private PessoaRepository pessoaRepo;
 
 	@Override
 	public void run(String... args) throws Exception {

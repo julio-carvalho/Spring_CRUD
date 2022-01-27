@@ -1,4 +1,4 @@
-package br.com.crudsb.bean;
+package br.com.crudsb.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
